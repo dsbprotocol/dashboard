@@ -17,7 +17,7 @@ export const ESD = {
 };
 
 export const ESDS = {
-  addr: '0x443D2f2755DB5942601fa062Cc248aAA153313D3', // Root/Implementation
+  addr: '0x443D2f2755DB5942601fa062Cc248aAA153313D3', // Root
   decimals: 18,
   symbol: 'ESDS',
 };
