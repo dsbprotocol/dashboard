@@ -4,6 +4,8 @@ import {DollarPool1, DollarPool2, DollarPool3, DollarPool4} from "../constants/c
 
 export async function getPoolAddress(): Promise<string> {
   const pool = await getPool(ESDS.addr);
+  return pool;
+  /*
   if (pool.toLowerCase() === DollarPool2.toLowerCase()) {
     return DollarPool2;
   }
@@ -13,7 +15,7 @@ export async function getPoolAddress(): Promise<string> {
   if (pool.toLowerCase() === DollarPool4.toLowerCase()) {
     return DollarPool4;
   }
-
+  */
   throw new Error("Unrecognized Pool Address: "+ESDS.addr);
 }
 

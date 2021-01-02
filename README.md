@@ -23,12 +23,12 @@ npm start
 
 ## contracts
 ### mainnet
-- `0x443D2f2755DB5942601fa062Cc248aAA153313D3` **DAO**
-- `0x7d72243247aedb0D1D35787A2942107dD76338d8` **Implementation**
-- `0x36F3FD68E7325a35EB768F1AedaAe9EA0689d723` **Døllar**
-- `0xea9f8bb8B5e8BA3D38628f0E18Ee82300eddBa0E` **Oracle**
-- `0x88ff79eB2Bc5850F27315415da8685282C7610F9` **UniswapV2 USDC:ESD Pair**
-- `0xdF0Ae5504A48ab9f913F8490fBef1b9333A68e68` **LP Incentivation Pool**
+- `0xaB397274Ef41DE0a29F44CF7e42224c823aa34Ae` **DAO**
+- `0x1469d6D9d7dF8c94C20571cE97c77647A9c8A61F` **Implementation**
+- `0xb33C3e51d1Cc68176c3f17aAfe90668dbd969478` **Døllar**
+- `0xbBCCdFD1AC2A84E881c01cc3EdD17CB5954b769d` **Oracle**
+- `0x03cfbfb7132af5caa25bfeeb0989cdb879b578bb` **UniswapV2 USDC:ESD Pair**
+- `0x9BA9776ca8922AB737d7Da001389cbF25F49e63c` **LP Incentivation Pool**
 
 ## disclaimer
 this project is an experiment, and its contracts are unaudited - we've put a significant amount of work into testing, as well as generally de-risking the design of its core mechanism, however participants should take great caution as bugs resulting in loss of funds are always a possibility.
@@ -50,4 +50,4 @@ limitations under the License.
 ```
 
 <br>
-made with 💔️ by the {ess}.
+made with 💔️ by the <a href="twitter.com/bitdeep">{bitdeep}</a>.

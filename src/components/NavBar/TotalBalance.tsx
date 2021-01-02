@@ -57,14 +57,14 @@ function TotalBalance({ user }: TotalBalanceProps) {
       const userPoolStagedBalance = toTokenUnitsBN(new BigNumber(userPoolStagedBalanceStr), ESDS.decimals);
       const userPoolRewardedBalance = toTokenUnitsBN(new BigNumber(userPoolRewardedBalanceStr), ESDS.decimals);
       const userPoolClaimableBalance = toTokenUnitsBN(new BigNumber(userPoolClaimableBalanceStr), ESDS.decimals);
-
+      console.log('pairTotalSupplyUNIStr', pairTotalSupplyUNIStr);
+      console.log('pairBalanceESDStr', pairBalanceESDStr);
       const UNItoESD = new BigNumber(pairBalanceESDStr).dividedBy(new BigNumber(pairTotalSupplyUNIStr));
 
       const daoTotalBalance = userStagedBalance.plus(userBondedBalance);
       const poolTotalBalance = UNItoESD.multipliedBy(userPoolStagedBalance.plus(userPoolBondedBalance))
         .plus(userPoolRewardedBalance.plus(userPoolClaimableBalance));
       const circulationBalance = UNItoESD.multipliedBy(userUNIBalance).plus(userBalance)
-
       const totalBalance = daoTotalBalance.plus(poolTotalBalance).plus(circulationBalance)
 
       if (!isCancelled) {
@@ -84,7 +84,7 @@ function TotalBalance({ user }: TotalBalanceProps) {
 
   return (
     <div style={{ fontSize: 14, padding: 3, fontWeight: 400, lineHeight: 1.5, fontFamily: 'aragon-ui-monospace, monospace'}}>
-      ∅{formatBN(totalBalance, 2)}
+      Ɉ {formatBN(totalBalance, 2)}
     </div>
   );
 }

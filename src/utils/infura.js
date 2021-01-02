@@ -112,6 +112,7 @@ export const getLockedUntil = async (dao, account) => {
  */
 export const getEpoch = async (dao) => {
   const daoContract = new web3.eth.Contract(daoAbi, dao);
+  console.log('getEpoch', dao);
   return daoContract.methods.epoch().call();
 };
 
@@ -121,6 +122,7 @@ export const getEpoch = async (dao) => {
  * @return {Promise<string>}
  */
 export const getEpochTime = async (dao) => {
+  console.log('getEpochTime', dao);
   const daoContract = new web3.eth.Contract(daoAbi, dao);
   return daoContract.methods.epochTime().call();
 };
@@ -337,6 +339,7 @@ export const getImplementation = async (dao) => {
  * @return {Promise<string>}
  */
 export const getPool = async (dao) => {
+  console.log('getPool', dao);
   const daoContract = new web3.eth.Contract(daoAbi, dao);
   return daoContract.methods.pool().call();
 };

@@ -1,5 +1,5 @@
 export const UNI = {
-  addr: '0x88ff79eB2Bc5850F27315415da8685282C7610F9', // Uniswap V2: ESD-USDC
+  addr: '0x03cfbfb7132af5caa25bfeeb0989cdb879b578bb', // Uniswap V2: ESD-USDC
   decimals: 18,
   symbol: 'UNI',
 };
@@ -11,13 +11,13 @@ export const USDC = {
 };
 
 export const ESD = {
-  addr: '0x36F3FD68E7325a35EB768F1AedaAe9EA0689d723', // Empty Set Dollar: ESD Token
+  addr: '0xb33C3e51d1Cc68176c3f17aAfe90668dbd969478', // Empty Set Dollar: ESD Token
   decimals: 18,
   symbol: 'ESD',
 };
 
 export const ESDS = {
-  addr: '0x443D2f2755DB5942601fa062Cc248aAA153313D3', // Root
+  addr: '0xaB397274Ef41DE0a29F44CF7e42224c823aa34Ae', // Root
   decimals: 18,
   symbol: 'ESDS',
 };
